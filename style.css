@@ -37,33 +37,44 @@ body {
 
 .card {
   /* border-top: 0.5rem solid hsl(0deg, 0%, 60%); */
+  background-color: hsl(0deg, 0%, 100%);
+  margin-left: 1.5rem;
+
+  /* Tablet (e.g., 768px to 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+  } 
 
   /* Web/Desktop (e.g., 1025px and larger) */
   @media (min-width: 1025px) {
     max-width: 50rem;
+    margin-left: 15rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
   }
 
   .indented-heading {
-    margin-left: 1.5rem;
+
     /* Tablet (e.g., 768px to 1024px) */
     @media (min-width: 768px) and (max-width: 1024px) {
     } 
     
     /* Web/Desktop (e.g., 1025px and larger) */
     @media (min-width: 1025px) {
-      margin-left: 16.5rem;
+      /* margin-left: 16.5rem; */
       max-width: 50rem;
     }
   }
   p {
-    margin-left: 1.5rem;
+
     /* Tablet (e.g., 768px to 1024px) */
     @media (min-width: 768px) and (max-width: 1024px) {
     } 
     
     /* Web/Desktop (e.g., 1025px and larger) */
     @media (min-width: 1025px) {
-      margin-left: 16.5rem;
+      /* margin-left: 16.5rem; */
       max-width: 50rem;
     }
   }
@@ -72,6 +83,8 @@ body {
 
 section.max-width-wrapper {
   border-top: 0.5rem solid hsl(0deg, 0%, 60%);
+  background-color: hsl(0deg, 0%, 40%);
+
 }
 
 /* // looks like the gray link on top is a border top with no border bottom */
