@@ -23,6 +23,8 @@ body {
   /* Default (applies to all screen sizes unless overridden) */
 
   margin-left: 1.25rem; /* Base margin for mobile-first approach */
+  margin-bottom: 4rem;
+  margin-top: 6rem;
 
   /* Tablet (e.g., 768px to 1024px) */
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -40,3 +42,4 @@ body {
   }
 }
 
+/* // looks like the gray link on top is a border top with no border bottom */
