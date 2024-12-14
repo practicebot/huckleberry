@@ -10,3 +10,33 @@ body {
 }
 
 /* Add styles here! */
+.intro-chunk {
+  p {
+    font-size: 1.25rem;
+    strong {
+      color: hsl(160deg, 100%, 30%);
+    }
+  }
+}
+
+.max-width-wrapper {
+  /* Default (applies to all screen sizes unless overridden) */
+
+  margin-left: 1.25rem; /* Base margin for mobile-first approach */
+
+  /* Tablet (e.g., 768px to 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .intro-chunk {
+      max-width: 25rem;
+    }
+  } 
+
+  /* Web/Desktop (e.g., 1025px and larger) */
+  @media (min-width: 1025px) {
+    margin-left: 16.5rem;
+    .intro-chunk {
+      max-width: 26rem;
+    }
+  }
+}
+
