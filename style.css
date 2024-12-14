@@ -12,7 +12,7 @@ body {
 /* Add styles here! */
 .intro-chunk {
   margin-top: 6rem;
-  margin-left: 1.25rem; /* Base margin for mobile-first approach */
+  margin-left: 1.5rem; /* Base margin for mobile-first approach */
 
   margin-bottom: 4rem;
   p {
@@ -21,43 +21,64 @@ body {
       color: hsl(160deg, 100%, 30%);
     }
   }
-  
-}
-
-.max-width-wrapper {
-  /* Default (applies to all screen sizes unless overridden) */
-
-  /* margin-left: 1.25rem; Base margin for mobile-first approach */
-  /* margin-bottom: 4rem; */
-  /* margin-top: 6rem; */
 
   /* Tablet (e.g., 768px to 1024px) */
   @media (min-width: 768px) and (max-width: 1024px) {
-    .intro-chunk {
-      max-width: 25rem;
-    }
+    max-width: 25rem;
   } 
-
+  
   /* Web/Desktop (e.g., 1025px and larger) */
   @media (min-width: 1025px) {
-    /* margin-left: 16.5rem; */
-    .intro-chunk {
-      max-width: 26rem;
-    }
+    margin-left: 16.5rem;
+    max-width: 26rem;
   }
+
 }
 
 .card {
-  border-top: 0.5rem solid gray;
-  
-  .indented-heading {
-    margin-left: 1.25rem;
-  }
-  p {
-    margin-left: 1.25rem;
+  /* border-top: 0.5rem solid hsl(0deg, 0%, 60%); */
+
+  /* Web/Desktop (e.g., 1025px and larger) */
+  @media (min-width: 1025px) {
+    max-width: 50rem;
   }
 
+  .indented-heading {
+    margin-left: 1.5rem;
+    /* Tablet (e.g., 768px to 1024px) */
+    @media (min-width: 768px) and (max-width: 1024px) {
+    } 
+    
+    /* Web/Desktop (e.g., 1025px and larger) */
+    @media (min-width: 1025px) {
+      margin-left: 16.5rem;
+      max-width: 50rem;
+    }
+  }
+  p {
+    margin-left: 1.5rem;
+    /* Tablet (e.g., 768px to 1024px) */
+    @media (min-width: 768px) and (max-width: 1024px) {
+    } 
+    
+    /* Web/Desktop (e.g., 1025px and larger) */
+    @media (min-width: 1025px) {
+      margin-left: 16.5rem;
+      max-width: 50rem;
+    }
+  }
+
+}
+
+section.max-width-wrapper {
+  border-top: 0.5rem solid hsl(0deg, 0%, 60%);
 }
 
 /* // looks like the gray link on top is a border top with no border bottom */
 /* border if 8px, so .5 rem
+/ time to set some max widths for the bottom card
+// do in order of web, tablet, mobile
+
+// web bottom card
+// box has a width of 800 px = 50 rem
+text content has padding of 1.5 rem
